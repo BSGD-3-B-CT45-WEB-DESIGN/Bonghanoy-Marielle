@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 5 - Hero Section</title>
+    <link rel="icon" href="pvz.jpeg" type="image/jpeg">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        
+        #page1 {
+            min-height: 100vh;
+            background: linear-gradient(180deg, #1a3d1a 0%, #2d5a27 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #page1::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, #7CFC0022 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+        
+        .hero {
+            position: relative;
+            max-width: 700px;
+            padding: 40px 20px;
+        }
+        
+        .hero-peashooter {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        .hero-tag {
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: #7CFC00;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        
+        .hero-title {
+            font-size: clamp(36px, 6vw, 72px);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-shadow: 0 0 40px #7CFC0044;
+        }
+        
+        .hero-title span {
+            color: #7CFC00;
+        }
+        
+        .hero-sub {
+            font-size: 16px;
+            color: #ccc;
+            line-height: 1.7;
+            margin-bottom: 36px;
+        }
+        
+        .hero-btns {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            padding: 14px 32px;
+            background: #7CFC00;
+            color: #225533;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background: #6ad900;
+            box-shadow: 0 0 20px #7CFC0088;
+        }
+        
+        .btn-outline {
+            padding: 14px 32px;
+            background: transparent;
+            color: #7CFC00;
+            font-weight: bold;
+            font-size: 15px;
+            border: 2px solid #7CFC00;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+        }
+        
+        .btn-outline:hover {
+            background: #7CFC00;
+            color: #225533;
+        }
+    </style>
+</head>
+<body>
+    <div id="page1">
+        <div class="hero">
+            <img src="plants-vs-zombie-peapod.gif" alt="Peashooter" class="hero-peashooter">
+            <p class="hero-tag">✦ Now Growing</p>
+            <h1 class="hero-title">Defend Your <span>Garden</span><br>from Zombies</h1>
+            <p class="hero-sub">Plant your defenses wisely. Peashooters, Sunflowers, and Wall-nuts await your command in this epic battle!</p>
+            <div class="hero-btns">
+                <button class="btn-primary">▶ Play Now</button>
+                <button class="btn-outline">Explore Plants</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

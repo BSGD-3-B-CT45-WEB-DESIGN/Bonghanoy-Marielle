@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 3 - Hover, Shadow & Transition</title>
+    <style>
+        body {
+            background-color: #2d5a27;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            color: white;
+        }
+        
+        h1 {
+            color: #7CFC00;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        
+        .section-title {
+            font-size: 13px;
+            letter-spacing: 3px;
+            color: #7CFC00;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        
+        .btn-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .uberbutton {
+            background-color: #000;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+        
+        .uberbutton:hover {
+            background-color: rgba(0,0,0,0.5);
+        }
+        
+        .amazonbutton {
+            background-color: rgb(255,216,20);
+            border: none;
+            color: #000;
+            padding: 15px 32px;
+            font-size: 16px;
+            width: 200px;
+            border-radius: 49px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+        
+        .amazonbutton:hover {
+            background-color: rgb(207,178,31);
+        }
+        
+        .githubbutton {
+            background-color: rgb(46,164,79);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: box-shadow 0.5s ease;
+        }
+        
+        .githubbutton:hover {
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .bootstrapbutton {
+            background-color: rgb(121,82,179);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+        
+        .bootstrapbutton:hover {
+            background-color: rgb(75,44,124);
+        }
+        
+        .bootstrap2button {
+            background-color: white;
+            border: 1px solid rgb(108,117,125);
+            color: rgb(108,117,125);
+            padding: 15px 32px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        
+        .bootstrap2button:hover {
+            background-color: rgb(108,117,125);
+            color: white;
+        }
+        
+        .linkedinbutton {
+            background-color: rgb(10,102,194);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 49px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+        
+        .linkedinbutton:hover {
+            background-color: rgb(19,82,146);
+        }
+        
+        .linkedin2button {
+            background-color: white;
+            border: 1px solid rgb(10,102,194);
+            color: rgb(10,102,194);
+            padding: 15px 32px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 49px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        
+        .linkedin2button:hover {
+            background-color: rgb(76,159,243);
+            border: 3px solid rgb(10,102,194);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Activity 3 - Hover, Shadow & Transition</h1>
+    <p class="section-title">#3 — Hover, Shadow & Transition</p>
+    <div class="btn-grid">
+        <button class="uberbutton">Request now</button>
+        <button class="amazonbutton">Add to cart</button>
+        <button class="githubbutton">Sign up</button>
+        <button class="bootstrapbutton">Get started</button>
+        <button class="bootstrap2button">Download</button>
+        <button class="linkedinbutton">Apply on company website</button>
+        <button class="linkedin2button">Save</button>
+    </div>
+</body>
+</html>

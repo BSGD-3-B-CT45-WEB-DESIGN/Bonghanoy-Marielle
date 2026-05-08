@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 4 - Image, Favicon & Audio</title>
+    <link rel="icon" href="pvz.jpeg" type="image/jpeg">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        
+        #page4 {
+            min-height: 100vh;
+            background: url('pvz.jpeg') no-repeat center center / cover;
+            position: relative;
+            padding: 60px 40px;
+        }
+        
+        #page4::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(26, 61, 26, 0.7);
+            pointer-events: none;
+        }
+        
+        .playlist-bar, .audio-box {
+            position: relative;
+        }
+        
+        .playlist-bar {
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+        
+        .scroll-text {
+            display: inline-block;
+            color: #7CFC00;
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 100%;
+            animation: scrolling 20s linear infinite;
+            text-shadow: 0 0 8px #7CFC00, 0 0 20px #7CFC00, 0 0 40px #7CFC00;
+        }
+        
+        @keyframes scrolling {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .audio-box {
+            text-align: center;
+        }
+        
+        .soft2-title {
+            font-size: 28px;
+            color: white;
+            margin-bottom: 16px;
+            transition: color 0.3s;
+            cursor: default;
+        }
+        
+        .soft2-title:hover {
+            color: #7CFC00;
+        }
+        
+        .gif-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 14px;
+        }
+        
+        .gif {
+            width: 80px;
+            height: auto;
+        }
+        
+        .gif-label {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="page4">
+        <div class="playlist-bar">
+            <div class="scroll-text">🌻 Plants vs Zombies - Main Theme • PopCap Games • Garden Warfare 🌻</div>
+        </div>
+        <div class="audio-box">
+            <h2 class="soft2-title">PvZ Soundtrack</h2>
+            <audio controls>
+                <source src="Plants vs Zombies Music Video.mp3" type="audio/mpeg">
+            </audio>
+            <div class="gif-row">
+                <img class="gif" src="plants-vs-zombie-peapod.gif" alt="Peashooter">
+                <span class="gif-label">PvZ Garden Soundtrack</span>
+                <img class="gif" src="plants-vs-zombie-peapod.gif" alt="Peashooter">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
